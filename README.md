@@ -2,12 +2,12 @@
 
 Trong bài lab này tôi sẽ hướng dẫn phát triển ứng dụng full-stack đơn giản với Dart và Flutter bao gồm backend và frontend.
 
-Việc sử dụng các framework hiện đại trong phát triển ứng dụng web giúp tăng tốc quá trình phát triển và dễ dàng quản lý dự án. Flutter là một công cụ phát triển ứng dụng đa nền tảng, cho phép chúng ta tạo ra các ứng dụng cho web, di ddonjong (Android, iOS) và desktop (Windows, macOS và Linux) từ cùng một dự án mã nguồn (codebase). Điều này giúp chúng ta tiết kiệm thời gian và công sức khi chúng ta chỉ cần viết mã một lần mà có thể biên dịch để chạy trên nhiều nền tảng khác nhau.
+Việc sử dụng các framework hiện đại trong phát triển ứng dụng web giúp tăng tốc quá trình phát triển và dễ dàng quản lý dự án. Flutter là một công cụ phát triển ứng dụng đa nền tảng, cho phép chúng ta tạo ra các ứng dụng cho web, di động (Android, iOS) và desktop (Windows, macOS và Linux) từ cùng một dự án mã nguồn (codebase). Điều này giúp chúng ta tiết kiệm thời gian và công sức khi chúng ta chỉ cần viết mã một lần mà có thể biên dịch để chạy trên nhiều nền tảng khác nhau.
 
 Quá trình biên dịch và phát hành ứng dụng web từ Dart và Framework sẽ tự động sinh ra mã cho backend và mã cho frontend (HTML, CSS và JavaScript) mà chúng ta không cần phải viết chúng trực tiếp. Điều này giúp chúng ta tập trung vào logic ứng dụng và giảm thiểu thời gian viết mã lặp lại. Tương tự, khi biên dịch ra các nền tảng di động hay desktop, chúng cũng sinh ra ứng dụng native trên cùng một codebase.
 
 ## Mục tiêu
-- Hiểu và áp dụng được các khải niệm cơ bản về ứng dụng web động, ứng dụng đa nền tảng.
+- Hiểu và áp dụng được các khái niệm cơ bản về ứng dụng web động, ứng dụng đa nền tảng.
 - Sử dụng Flutter framework để tạo giao diện đơn giản cho một ứng dụng.
 - Sử dụng Dart và thư viện shelf, shelf_router để tạo server đơn giản xử lý các yêu cầu HTTP theo chuẩn RESTful API.
 - Tích hợp giao diện với logic xử lý phản hồi từ server, thực hiện thao tác gửi dữ liệu từ client lên server thông qua HTTP POST.
@@ -40,8 +40,8 @@ simple_flutter_project\
     - Nếu bạn chưa cài Flutter, hãy truy cập vào https://docs.flutter.dev/get-started/install/windows/web để tải về và cài đặt theo hướng dẫn. Bạn có thể chọn theo nền tảng Windows hoặc macOS của bạn.
     - Lệnh `dart create -t server-shelf . --force` sẽ tạo một dự án Dart với mẫu `-t, template` là `server-shelf` trong thư mục hiện tại `.` và tham số `--force` cho biết sẽ tạo dự án cho dù thư mục gốc đã tồn tại (mặc định là sẽ tạo mới thư mục).
 3. Thêm các thư viện vào dự án backend nếu cần.
-- Trong ứng dụng mẫu `server-shelf`, flutter đã sử dụng các thư viện `shelf` và `shelf-router` trong tệp `pubspec.yaml`.
-- Các bạn có thể xem các thư viện khác ở trang https://pub.dev trên đó mình cũng có tạo một số packages cho cộng đồng. Bạn có thể xem mô tả, ví dụ và hướng dẫn cài đặt.
+- Trong ứng dụng mẫu `server-shelf`, dự án đã sử dụng các thư viện `shelf` và `shelf-router` trong tệp `pubspec.yaml`.
+- Các bạn có thể xem các thư viện khác ở trang https://pub.dev trên đó mình cũng có tạo một số package cho cộng đồng. Bạn có thể xem mô tả, ví dụ và hướng dẫn cài đặt.
 
 ### Bước 3: Tạo ứng dụng frontend bằng Flutter framework
 1. Quay lại thư mục dự án chính (nếu bạn đang ở thư mục backend)
@@ -70,7 +70,7 @@ simple_flutter_project\
 
 ### Bước 5: Đẩy dự án mã nguồn lên GitHub và quản lý mã nguồn
 - Chọn `Source Control` ở thanh Side Bar và chọn `Publish to GitHub`.
-- Quản lý mã nguồn bằng cách commit, push (Sync Changes ...), pull,... từ cửa sổ `Source Control`.
+- Quản lý mã nguồn bằng cách commit, push (Sync Changes...), pull,... từ cửa sổ `Source Control`.
 **Lưu ý:** Nếu bạn chưa có Git thì hãy cài Git (tham khảo google). Các bạn cũng cần một chút kiến thức sử dụng GitHub từ google cũng khá là dễ.
 
 ### Bước 6: Phát triển backend và kiểm thử
